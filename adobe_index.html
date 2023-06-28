@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ADOBE</title>
+  <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .flex{
+      display:flex;
+      flex-wrap: wrap;
+    }
+
+    .header{
+      justify-content: space-between;
+      background-color: rgb(49, 44, 44);
+    }
+
+    .header_baby{
+      color:rgb(243, 236, 236);
+    }
+
+    .header_items{
+      padding:14px;
+      list-style-type: none;
+    }
+
+    .header_items:hover{
+      cursor: pointer;
+      background-color: black;
+    }
+
+    .btn_startnow{
+      background-color: rgb(68, 129, 241);
+      color:white;
+      margin-left:20px;
+      font-size: 15px;
+      border-radius: 30px;
+      padding:5px;
+      border:2px solid white;
+    }
+
+    .btn_startnow:hover{
+      cursor: pointer;
+      background-color: white;
+      color:rgb(68, 129, 241);
+    }
+
+    .start_now_sec{
+      background-color: rgb(68, 129, 241);
+      padding:25px;
+      justify-content: center;
+      color:white;
+      font-weight: 800;
+    }
+
+    .workfast_container{
+      text-align: center;
+      padding: 3%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .workfast_p{
+      padding-top: 10px;
+      font-size: 22px;
+      color:rgb(171, 173, 162);
+    }
+
+    .hr_cut_1{
+      background-color:rgb(171, 173, 162);
+      border:1px solid rgb(171, 173, 162);
+      width: 30%;
+      margin:auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .workfast_img1{
+      width: 100%;
+    }
+
+    .workfast_img2{
+      width:65%; 
+    }
+
+    .workfast_pa{
+      max-width: 300px;
+      font-size: 22px;
+      color:rgb(171, 173, 162)
+    }
+
+    .workfast_align{
+      justify-content: center;
+      padding-top: 20px;
+    }
+
+    .artists{
+      text-align: center;
+      background-color: rgb(241, 241, 241);
+    }
+    .artist_rule{
+      padding-top:50px;
+    }
+
+
+    .artist_img{
+      width:250px;
+      height: 250px;
+      border-radius: 50%;
+      padding:30px;
+    }
+
+    .artist_p{
+      font-size: 22px;
+      color:rgb(171, 173, 162);
+    }
+
+    .artist_img_container{
+      justify-content: center;
+      padding:25px;
+    }
+
+    .hr_cut_2{
+      background-color:rgb(171, 173, 162);
+      border:1px solid rgb(171, 173, 162);
+      width: 150px;
+      margin:auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .artist_name{
+      font-weight: 700;
+      font-size: 25px;
+      color:rgb(46, 39, 46)
+    }
+
+    .artist_job{
+      color:rgb(113, 122, 122);
+      font-size: 18px;
+    }
+
+    .btn_contributor{
+      font-size: 14px;
+      border-radius: 30px;
+      padding:10px;
+      color:rgb(68, 129, 241);
+      border:1px solid rgb(68, 129, 241);
+      background-color: rgb(241, 241, 241);
+      margin: 20px;
+      margin-bottom: 40px;
+    }
+
+    .btn_contributor:hover{
+      cursor: pointer;
+      color:white;
+      background-color: rgb(68, 129, 241);
+    }
+
+    .smart_container{
+      background-color: rgb(82, 82, 82);
+    }
+
+    .search_head{
+      color:rgb(235, 235, 235);
+      font-size: 30px;
+      font-weight: lighter;
+      padding-top: 20px;
+    }
+
+    .search_p{
+      color:rgb(235, 235, 235);
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .search_lists{
+      padding:25px;
+    }
+
+    .search_li{
+      list-style-type: none;
+      color:rgb(235, 235, 235);
+      padding:25px;
+      font-size: 15px;
+    }
+
+    .spacing{
+      padding:8px;
+    }
+
+    .vl{
+      width:1px;
+      height: 250px;
+      margin-top: 60px;
+      border:1px solid rgb(235, 235, 235);
+    }
+
+    .searc_lm{
+      margin: auto;
+    }
+
+    .search_img{
+      width: 50px;
+    }
+
+    .search_lm_p{
+      max-width: 200px;
+      color: rgb(235, 235, 235);
+    }
+
+    .btn_lm{
+      margin-top:20px;
+      background: transparent;
+      color:rgb(180, 179, 179);
+      border: 1px solid rgb(180, 179, 179);
+      font-size: 14px;
+      padding:10px;
+      border-radius: 30px;
+    }
+
+    .btn_lm:hover{
+      color:white;
+      background-color: rgb(124, 124, 124);
+    }
+
+    .margin{
+      margin-left:15%;
+      margin-right:15%;
+    }
+
+    .footer{
+      padding:1%;
+      justify-content: space-between;
+      background-color: rgb(49, 44, 44);
+    }
+
+    .footer_baby{
+      color:rgb(182, 171, 171);
+    }
+
+    .footer_items{
+      padding:12px;
+      list-style-type: none;
+    }
+
+    .footer_items:hover{
+      color:rgb(255, 255, 255);
+    }
+
+    .all_rights{
+      padding-top:14px;
+    }
+    .grid_container{
+      background-color: rgb(247, 247, 247);
+      text-align:center;
+      padding:30px;
+      padding-bottom: 75px;
+      padding-left: 0%;
+      padding-right: 0%;
+      flex-wrap: wrap;
+    }
+
+    .grid_p{
+      color:rgb(182, 171, 171);
+      font-size: 30px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .images_grid{
+      display: flex;
+      justify-content: center;
+      width: inherit;
+      height: inherit;
+      flex-wrap:wrap;
+    }
+    
+
+    .grid_image{
+      margin:1%;
+      height:auto;
+      width:auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgb(179, 176, 176);
+      display:inline;
+      padding-bottom: 1%;
+    }
+
+    .img_exp{
+      font-weight: bold;
+      color:black;
+    }
+
+    .imgs_exps{
+      color:black;
+      max-width: 75%;
+      margin: auto;
+    }
+
+    .grid_images:hover{
+      background-color: black;
+      opacity:75%;
+    }
+
+    .search_bar_container{
+      background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/10/small-memory-4k_1540749683.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+    }
+
+    .logo{
+      width:200px;
+    }
+
+    .logo:hover, .cam_btn, select{
+      cursor: pointer;
+    }
+
+    .btn_library{
+      border:none;
+      color:white;
+      background-color: transparent;
+    }
+
+    .btn_library:hover{
+      cursor: pointer;
+    }
+
+    .thin{
+      font-size: 20px;
+      font-weight: 200;
+    }
+
+    .searc_bar_author{
+      color:white;
+      float: right;
+    }
+
+    .search_button{
+      display: flex;
+      max-width: 800px;
+      height:50px;
+      border-radius: 4px;
+      color: #222;
+      background-color: white;
+      margin:auto;
+      margin-top:30px;
+      border: white;
+    }
+    input,select, .cam_btn  {
+     border: none;
+     background: transparent;
+    }
+
+    select{
+      width:100px;
+      background-color: rgb(240, 240, 240);
+      font-size: 16px;
+      color:rgb(75, 73, 73);
+      padding-left: 3%;
+    }
+
+    input{
+      color:rgb(194, 194, 194);
+      font-size: 16px;
+      width: 650px;
+    }
+
+    .cam_btn{
+      width:50px;
+      outline: none;
+    }
+    .cam_btn:hover{
+      background-color: rgb(221, 214, 203);
+    }
+
+    .search_headers{
+      display: flex;
+      justify-content: space-between;
+      padding:10px;
+    }
+
+    .search_middle{
+      padding-top: 2%;
+      padding-bottom: 2%;
+      position: relative;
+   }
+
+   .search_footer{
+     padding:10px;
+     position: absolute right;
+     margin-top: 10%;
+
+   }
+
+   .searc_bar_author{
+     cursor: pointer;
+   }
+
+   .search_header{
+      color:white;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .search_ip{
+      padding-left: 2%;
+    }
+
+    textarea:focus, input:focus {
+    color:black;
+    font-size: 20px;
+    }
+
+.spacing:hover{
+  color:rgb(149, 143, 229)
+}
+
+.logo_he{
+      width:200px;
+      display: none;
+    }
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    @media(max-width: 1400px){
+      .header_baby_2{
+        display: none;
+      }
+
+      .footer_baby_1{
+        display: none;
+      }
+
+      .footer_baby_2{
+        margin: auto;
+      }
+
+      .search_li_3{
+        display: none;
+      }
+
+      .margin{
+        margin:0%;
+      }
+
+      .search_lists{
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .cam_btn{
+        display: none;
+      }
+      .workfast_container{
+        text-align: center;
+        padding: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .workfast_pa{
+        max-width: 500px;
+      }
+  }
+
+    @media(max-width: 1000px){
+      .header_baby_1{
+        display: none;
+      }
+
+      .logo{
+        display: none;
+      }
+
+      .logo_he{
+        display:inline-block;
+        margin-left: 35%;
+      }
+
+      .btn_library{
+        display: none;
+      }
+
+      .search_li_2{
+        display: none;
+      }
+      .margin{
+        margin: none;
+      }
+
+      .search_lm{
+        margin: none;
+      }
+
+      .search_header{
+        max-width: 80%;
+        margin:auto;
+        margin-top: 10%;
+      }
+
+      .search_button{
+        max-width: 70%;
+      }
+
+      
+    }
+
+    @media(max-width: 600px){
+      .logo_he{
+        display:inline-block;
+        margin-left: 32%;
+      }
+      .head_2{
+        display: none;
+      }
+
+      .search_head, .search_p, .search_li, .vl{
+        display: none;
+      }
+
+      .searc_lm{
+        margin-left:30%;
+        padding:5%
+      }
+      .artist_img_container{
+        display: block;
+      }
+
+      .footer_baby_3{
+        display: none;
+      }
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+	<div>
+		<div>
+			<nav class="header flex">
+				<ul class="header_baby header_baby_1 flex">
+					<li class="header_items">Photos</li>
+					<li class="header_items">Illustrations</li>
+					<li class="header_items">Vectors</li>
+					<li class="header_items">Videos</li>
+					<li class="header_items">Audios</li>
+					<li class="header_items">Templates</li>
+					<li class="header_items">3D</li>
+					<li class="header_items">Premium</li>
+          <li class="header_items">Editorial</li>
+        </ul>
+        <img class="logo_he" src="https://as.ftcdn.net/r/v1/pics/970799db9780bab7bdc963d283ff64ee812913ca/all/default/stock_logo_2020_white.svg">
+        <ul class="header_baby flex">
+					<li class="header_items header_baby_2">Sales:889=649-1006</li>
+					<li class="header_items header_baby_2">🛒Sell</li>
+					<li class="header_items header_baby_2">💰Pricing</li>
+					<li class="header_items head_2">Sign-in</li>
+					<li class="header_items head_2"> ♾️ </li>
+				</ul>
+			</nav>
+		</div>
+		<div class="search_bar_container">
+      <section class="search_headers">
+        <img class="logo" src="https://as.ftcdn.net/r/v1/pics/970799db9780bab7bdc963d283ff64ee812913ca/all/default/stock_logo_2020_white.svg">
+        <button class="btn_library">My Library⬇</button>
+      </section>
+      <div class="search_middle">
+        <h1 class="search_header thin">Find the perfect stock asset for your next creative project</h1>
+        <div class="search_button">
+          <select class="thin">
+            <option>All</option>
+            <option>Image</option>
+            <option>Video</option>
+            <option>Audio</option>
+            <option>Template</option>
+            <option>3D</option>
+            <option>Editorial</option>
+            <option>Premium</option>
+          </select>
+          <input class="search_ip" type="search" placeholder="Search">
+          <button class="cam_btn">📷</button>
+        </div>
+      </div>
+			<div class="search_footer"><h3 class="searc_bar_author"><i>by</i><strong>Wacomka</strong></h3></div> </div>
+		<div class="flex start_now_sec">
+			<h2 class="thin">Get 10 free Adobe Stock images.</h2>
+			<button class="btn_startnow">Start now</button>
+		</div>
+		<div class="grid_container">
+			<p><strong>CURATED ASSET COLLECTIONS</strong></p>
+      <p class="grid_p">Explore diverse collections of our most incredible high-resolution, royalty-free, stock assets</p>
+      <hr class="hr_cut_1">
+   <div class="images_grid">
+    <div class="grid_image">
+      <a href="https://stock.adobe.com/in/collections/Kqy5H45lnKzkC5I8JGFXYVwr2ltNwMe7"> <img class="grid_images" src="https://as.ftcdn.net/r/v1/pics/3da185e9b8d19b834c7bb7c65ed42e864a4b5eb8/home/discover_collections/20Sept/photos.webp">
+          <p class="img_exp">Stock photos</p>
+          <p class="imgs_exps">Beautiful and inspiring royalty-free stock images.</p>
+      </a>
+    </div>
+    <div class="grid_image">
+      <a href="https://stock.adobe.com/in/collections/Kqy5H45lnKzkC5I8JGFXYVwr2ltNwMe7"> <img class="grid_images" src="https://as.ftcdn.net/r/v1/pics/c1120f9acbb4875962cb5609c95fa3f330ef2132/home/discover_collections/20Sept/premium.webp">
+        <p class="img_exp">Premium stock images</p>
+        <p class="imgs_exps">Rroyalty-free stock photos for powerful storytelling.</p>
+      </a>
+    </div>
+    <div class="grid_image">
+      <a href="https://stock.adobe.com/in/collections/Kqy5H45lnKzkC5I8JGFXYVwr2ltNwMe7"> <img class="grid_images" src="https://as.ftcdn.net/r/v1/pics/3401cab6595c62997ed1de2372cbf5f3be1b5056/home/discover_collections/20Sept/video.webp">
+        <p class="img_exp">Stock video footage</p>
+        <p class="imgs_exps">Stunning 4K stock video clips for any motion project.</p>
+      </a>
+    </div>
+    <div class="grid_image">
+      <a href="https://stock.adobe.com/in/collections/Kqy5H45lnKzkC5I8JGFXYVwr2ltNwMe7"> <img class="grid_images" src="https://as.ftcdn.net/r/v1/pics/a769981ea032d7f2a9bc232034b63c6a16004edb/home/discover_collections/20Sept/templates.webp">
+        <p class="img_exp">Royalty-free templates</p>
+        <p class="imgs_exps">Made for adobe inDesign, Illustrator, and more.</p>
+      </a>
+    </div>
+    <div class="grid_image">
+      <a href="https://stock.adobe.com/in/collections/Kqy5H45lnKzkC5I8JGFXYVwr2ltNwMe7"> <img class="grid_images" src="https://as.ftcdn.net/r/v1/pics/5056999e2467c455f46352d68bafb15a2e87513f/home/discover_collections/20Sept/vector.webp">
+        <p class="img_exp">Vector art and illustrations</p>
+        <p class="imgs_exps">Royalty-free stock illustrations and vector art.</p>
+      </a>
+    </div>
+    <div class="grid_image">
+      <a href="https://stock.adobe.com/in/collections/Kqy5H45lnKzkC5I8JGFXYVwr2ltNwMe7"> <img class="grid_images" src="https://as.ftcdn.net/r/v1/pics/598e2e33ad21579b3b53dea0f2f899389dcaef5a/home/discover_collections/20Sept/audio.webp">
+        <p class="img_exp">Stock music and audio</p>
+        <p class="imgs_exps">Discover a wide range of amazing royalty-free music.</p>
+      </a>
+    </div>
+  </div>
+   </div>
+		<div class="workfast_container">
+			<strong><p class="work_fast">WORK FASTER</P></strong>
+			<p class="workfast_p thin">Find the perfect high-res, royalty-free, stock image to enhance your next creative project.</p>
+      <p class="workfast_p thin">All from within your Adobe Creative Cloud apps.</p>
+      <hr class="hr_cut_1">
+      <img class="workfast_img1" src="https://as.ftcdn.net/r/v1/pics/346352852c40d9088b8626bdfb61601dc1ecd9de/home/open-in.webp">
+			<div class="flex workfast_align">
+				<p class="workfast_pa">Preview watermarked images inside your designs first. Then license, access and manage them directly within Photoshop, InDesign, Illustrator, and other Adobe desktop apps.</p> <img class="workfast_img2" src="https://as.ftcdn.net/r/v1/pics/b1e527697b37241a9d28ccd4d0e9f3e8f3ea5d2d/home/in-app.webp"> </div>
+		</div>
+		<div class="artists">
+			<h3 class="artist_rule">ARTISTS RULE</h3>
+      <p class="artist_p thin">Get inspired by these Adobe Stock contributors</p>
+      <hr class="hr_cut_2">
+			<div class="flex artist_img_container">
+        <span>
+          <a href="https://stock.adobe.com/in/contributor/207654964/diversity-photos">
+            <img class="artist_img" src="https://i.pinimg.com/474x/bf/27/21/bf27218810c8066367132ccf2c1fd316.jpg"><p class="artist_name">Diversity photos</p><p class="artist_job">Photographer</p></a>
+        </span>
+        <span>
+          <a href="https://stock.adobe.com/in/contributor/206893861/cesar-santillan">
+            <img  class="artist_img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReUVURtFlfw8zyb2CALw1Ly1XUg1uvgVAgUg&usqp=CAU"><p class="artist_name">Cesar Santillan</p><p class="artist_job">Illustrator</p></a>
+        </span>
+        <span>
+          <a href="https://stock.adobe.com/in/contributor/207487627/carlos-david">
+            <img class="artist_img" src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"><p class="artist_name">Carlos David</p><p class="artist_job">Photographer</p></a>
+        </span>
+        <span>
+          <a href="https://stock.adobe.com/in/contributor/207741862/osato-emumwen">
+            <img class="artist_img" src="https://reflectionscc.com/wp-content/uploads/2018/10/blank-male-silhouette.jpg"><p class="artist_name">Osato Emumwen</p><p class="artist_job">Illustrator</p></a>
+        </span>
+      </div>
+			<span>
+               <p class="artist_p thin">Earn royalties doing what you love<p>
+               <a href="https://contributor.stock.adobe.com/in/?as_channel=stock&as_source=homepage&as_campclass=brand&as_campaign=contributor_section">
+                 <button class="btn_contributor">Become A Contributor</button></a>
+             </span>
+			</div>
+		<div class="smart_container">
+			<section class="margin">
+        <p class="search_head">Search smarter</p>
+		  	<p class="search_p">Check out these popular categories.</p>
+      </section>
+      <section class="flex margin">
+        <section class="search_lists">
+          <a href="https://stock.adobe.com/in/category/animals/1?load_type=category">
+            <ul class="search_li">
+              <li class="spacing">Animals</li>
+              <li class="spacing">Drinks</li>
+              <li class="spacing">Food</li>
+              <li class="spacing">Industry</li>
+              <li class="spacing">People</li>
+              <li class="spacing">Science</li>
+              <li class="spacing">Technology</li>
+              <li class="spacing">News</li>
+            </ul>
+          </a>
+        </section>
+        <section class="search_lists">
+          <a href="https://stock.adobe.com/in/category/animals/1?load_type=category">
+            <ul class="search_li search_li_2">
+              <li class="spacing">Buiuldings and Architecture</li>
+              <li class="spacing">The environment</li>
+              <li class="spacing">Graphic Resources</li>
+              <li class="spacing">Landscapes</li>
+              <li class="spacing">Plants and Flowers</li>
+              <li class="spacing">Social issues</li>
+              <li class="spacing">Transport</li>
+              <li class="spacing">Entertainment</li>
+            </ul>
+          </a>
+        </section>
+        <section class="search_lists">
+          <a href="https://stock.adobe.com/in/category/animals/1?load_type=category">
+            <ul class="search_li search_li_3">
+              <li class="spacing">Business</li>
+              <li class="spacing">States of Mind</li>
+              <li class="spacing">Hobbies and Leisure</li>
+              <li class="spacing">Lifestyle</li>
+              <li class="spacing">Culture and Relegion</li>
+              <li class="spacing">Sports</li>
+              <li class="spacing">Travel</li>
+              <li class="spacing">Sports News</li>
+            </ul>
+          </a>
+        </section>
+        <section class="vl"></section>
+        <section class="searc_lm">
+          <img class="search_img" src="https://as.ftcdn.net/r/v1/pics/e893df9b64ee1fce82be3882fc41b2c19867e041/all/default/icons/creativecloud_appicon_48_at2x.png">
+          <p class="search_lm_p">Beautiful fonts, anywhere you need them. Find great type for web, print, and beyond with Adobe Fonts.</p>
+          <a href="https://fonts.adobe.com">
+          <button class="btn_lm">Learn More</button>
+          </a>
+        </section>
+      </section>
+		</div>
+    <div>
+      <nav class="footer flex">
+        <a href="https://helpx.adobe.com/support/stock.html">
+          <ul class="footer_baby footer_baby_1 flex">
+            <li class="footer_items">Change region</li>
+            <li class="footer_items">License terms</li>
+            <li class="footer_items">Learn&Support</li>
+            <li class="footer_items">Company</li>
+            <li class="footer_items">Sell Images</li>
+            <li class="footer_items">Enterprises</li>
+          </ul>
+        </a>
+        <ul class="footer_baby footer_baby_2 flex">
+          <p class="all_rights footer_baby_1">© 2020 Adobe. All rights reserved.</p>
+          <a class="footer_baby flex" href="https://helpx.adobe.com/support/stock.html">
+            <li class="footer_items">privacy</li>
+            <li class="footer_items">Terms of Use</li>
+            <li class="footer_items footer_baby_3">Cookie preferences</li>
+            <li class="footer_items">🔀Add Choices</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+	</div>
+</body>
+</html>
